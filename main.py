@@ -2,6 +2,9 @@ import numpy as np
 from nltk.tokenize import word_tokenize
 import re
 import pandas as pd
+import nltk
+nltk.download('punkt')
+
 
 def tokenize(text):
     if isinstance(text, list):
