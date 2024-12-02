@@ -2,4 +2,3 @@ requests==2.32.3
 numpy
 nltk
 pandas
-nltk.download('punkt')
