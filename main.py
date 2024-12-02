@@ -1,5 +1,8 @@
 import nltk
-nltk.download('punkt')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 import numpy as np
 from nltk.tokenize import word_tokenize
